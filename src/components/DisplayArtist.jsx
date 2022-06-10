@@ -24,7 +24,7 @@ const DisplayArtist = (props) => {
                   </Typography>
                   <DisplayShows 
                   artist={index.name}
-                  
+                  shows={props.shows}
                   />
                 </Item>
               </Grid>
