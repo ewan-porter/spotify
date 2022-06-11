@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 import GetArtists from "./components/GetArtists";
 
 import { SpotifyAuth, Scopes } from 'react-spotify-auth'
+import 'react-spotify-auth/dist/index.css' // if using the included styles
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -21,7 +22,7 @@ function App() {
 
   const [token, setToken] = useState(Cookies.get("spotifyAuthToken"));
 
-
+// Cookies.remove("spotifyAuthToken");
 
   return (
     <div className='app'>
